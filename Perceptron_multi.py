@@ -20,8 +20,8 @@ def multiperceptron(x, w1, w2):
     x = np.append(1, x) 
 
     # Calcul des activations des neurones de la couche cachée
-    u1 = np.dot(x, w1)  
-    z1 = sigmoid(u1)  
+    u1 = np.dot(x, w1)
+    z1 = sigmoid(u1)
 
     # Ajout du biais pour la couche de sortie
     z1 = np.append(1, z1)
