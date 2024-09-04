@@ -29,18 +29,15 @@ def apprentissage_widrow(x, yd, epoch, batch_size, learning_rate=0.1):
     
     for ep in range(epoch):
         erreur_epoch = 0
-        indices = np.random.permutation(batch_size)
+        indices = np.random.permutation(n_samples)
 
         for i in range(0, n_samples, batch_size):
             batch_indices = indices[i:i + batch_size]
             x_batch = x[batch_indices]
-            yd_batch = yd[batch_indices] # Que des 1 !! Trouver pourquoi ?
+            yd_batch = yd[batch_indices]
 
             # Calcul de la sortie prédite
             y = np.dot(x_batch, w)
-
-            print(yd_batch)
-            print(y)
 
             # Calcul de l'erreur
             erreur = yd_batch - y

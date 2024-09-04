@@ -2,7 +2,7 @@ import numpy as np
 
 ##################################################################################
 #
-# 1.1 Mise en place d’un perceptron multi-couche
+# 1.3 Mise en place d’un perceptron multi-couche
 #
 ##################################################################################
 
