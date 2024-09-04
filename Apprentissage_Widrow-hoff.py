@@ -66,7 +66,7 @@ def apprentissage_widrow(x, yd, epoch, batch_size, learning_rate=0.1):
 ##################################################################################
 
 # Charger les données depuis le fichier p2_d1.txt
-data = np.loadtxt('C:/Users/mathe/Save_OneDrive_CNAM/CNAM_3/transfert/p2_d1.txt')
+data = np.loadtxt('p2_d1.txt')
 
 # Les deux lignes représentent X1 et X2, et les 50 colonnes représentent les individus
 x1 = data[0, :]
@@ -135,7 +135,7 @@ plt.show()
 ##################################################################################
 
 # Charger les données depuis le fichier p2_d2.txt
-data = np.loadtxt('C:/Users/mathe/Save_OneDrive_CNAM/CNAM_3/transfert/p2_d2.txt')
+data = np.loadtxt('p2_d2.txt')
 
 # Les deux lignes représentent X1 et X2, et les 50 colonnes représentent les individus
 x1 = data[0, :]
